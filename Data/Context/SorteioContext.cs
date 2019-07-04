@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 
+
 namespace Domain.Context
 {
     public class SorteioContext : DbContext
@@ -21,7 +22,6 @@ namespace Domain.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //modelBuilder.ApplyConfiguration(new PessoaMap());
-
             base.OnModelCreating(modelBuilder);
         }
         
